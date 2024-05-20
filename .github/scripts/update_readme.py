@@ -9,8 +9,17 @@ def fetch_stars(organization):
         'Accept': 'application/vnd.github.v3+json',
     }
     response = requests.get(f'https://api.github.com/orgs/{organization}/repos', headers=headers)
-    repos = response.json()
-    star_count = sum(repo['stargazers_count'] for repo in repos if not repo['fork'])
+    if response.status_code == 200:
+        repos = response.json()
+        if isinstance(repos, list):  # Ensure that repos is a list
+            star_count = sum(repo['stargazers_count'] for repo in repos if not repo['fork'])
+        else:
+            print(f"Unexpected data type: {type(repos)}")
+            star_count = 0
+    else:
+        print(f"Failed to fetch data: {response.status_code}")
+        print("Response:", response.text)  # Log the actual response to see what went wrong
+        star_count = 0
     return star_count
 
 def update_readme(star_count):
