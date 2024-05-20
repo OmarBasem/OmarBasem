@@ -25,13 +25,11 @@ def fetch_stars(organization):
 def update_readme(star_count):
     """Updates README.md with the latest star count."""
     with open('README.md', 'r+') as file:
-        print("stars count", star_count)
-        file.write(f"\nTest: {star_count}")
         # content = file.read()
         # content = re.sub(r'(Test\(S\):\s)\d*', r'\g<1>' + str(star_count), content)
-        # file.seek(0)
-        # file.write(content)
-        # file.truncate()
+        file.seek(0)
+        file.write(f"\nTest: {star_count}")
+        file.truncate()
 
 if __name__ == "__main__":
     star_count = fetch_stars('sticknet')  # Replace with your organization's name
