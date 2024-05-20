@@ -5,7 +5,7 @@ import requests
 def fetch_stars(organization):
     """Fetches stars for all repos in the given organization."""
     headers = {
-        'Authorization': f'token {os.getenv("API_TOKEN")}',
+        'Authorization': f'Bearer {os.getenv("API_TOKEN")}',
         'Accept': 'application/vnd.github.v3+json',
     }
     response = requests.get(f'https://api.github.com/orgs/{organization}/repos', headers=headers)
