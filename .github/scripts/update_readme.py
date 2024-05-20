@@ -8,7 +8,7 @@ def fetch_stars(organization):
         'Authorization': f'token {os.getenv("API_TOKEN")}',
         'Accept': 'application/vnd.github.v3+json',
     }
-    response = requests.get(f'https://api.github.com/orgs/{organization}/repos')
+    response = requests.get(f'https://api.github.com/orgs/{organization}/repos', headers=headers)
     if response.status_code == 200:
         repos = response.json()
         if isinstance(repos, list):  # Ensure that repos is a list
