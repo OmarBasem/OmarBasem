@@ -26,7 +26,7 @@ def update_readme(star_count):
     """Updates README.md with the latest star count."""
     with open('README.md', 'r+') as file:
         content = file.read()
-        content = re.sub(r'(?<=\bTest(S):\s)\d+', str(star_count), content)
+        content = re.sub(r'(Test\(S\):\s)\d*', r'\g<1>' + str(star_count), content)
         file.seek(0)
         file.write(content)
         file.truncate()
