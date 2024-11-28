@@ -2,7 +2,7 @@
 
 I'm Omar Basem,
 
-If you'd like to get in touch, drop me a message via [LinkedIn](https://linkedin.com/in/omarbasem) or [email](mailto:omarbasem.01@protonmail.com).
+If you'd like to get in touch, drop me a message via [LinkedIn](https://linkedin.com/in/omarbasem) or [email](mailto:omarbasem.0x@gmail.com).
 
 ## Top Skills
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
