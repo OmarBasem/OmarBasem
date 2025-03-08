@@ -10,4 +10,3 @@ If you'd like to get in touch, drop me a message via [LinkedIn](https://linkedin
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
 ![iOS](https://img.shields.io/badge/ios-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![Android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Web 3.0](https://img.shields.io/badge/Web%203.0-F7931A.svg?style=for-the-badge&logo=bitcoin&logoColor=white)
